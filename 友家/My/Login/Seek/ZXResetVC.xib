@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ZXResetVC">
+            <connections>
+                <outlet property="checkTextField" destination="otA-AX-xe8" id="ztQ-1s-1Z1"/>
+                <outlet property="confirmBtn" destination="owP-Ld-0at" id="66e-mR-Qqb"/>
+                <outlet property="passwordTextField" destination="1dF-je-ELi" id="T9M-qr-kam"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="新密码" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="1dF-je-ELi">
+                    <rect key="frame" x="25" y="30" width="270" height="40"/>
+                    <color key="backgroundColor" red="0.8980392157" green="0.8980392157" blue="0.8980392157" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="wgZ-V0-7aE"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="owP-Ld-0at">
+                    <rect key="frame" x="25" y="160" width="270" height="40"/>
+                    <color key="backgroundColor" red="0.92156862750000001" green="0.26274509800000001" blue="0.26274509800000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="确定">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="confirmPassword:" destination="-1" eventType="touchUpInside" id="FNQ-h6-O3w"/>
+                    </connections>
+                </button>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="确认密码" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="otA-AX-xe8">
+                    <rect key="frame" x="25" y="90" width="270" height="40"/>
+                    <color key="backgroundColor" red="0.8980392157" green="0.8980392157" blue="0.8980392157" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <textInputTraits key="textInputTraits" returnKeyType="send" secureTextEntry="YES"/>
+                </textField>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="centerX" secondItem="otA-AX-xe8" secondAttribute="centerX" id="94o-2J-f7n"/>
+                <constraint firstItem="owP-Ld-0at" firstAttribute="height" secondItem="otA-AX-xe8" secondAttribute="height" id="BRe-ML-NbZ"/>
+                <constraint firstItem="owP-Ld-0at" firstAttribute="height" secondItem="1dF-je-ELi" secondAttribute="height" id="D8f-00-Hgn"/>
+                <constraint firstItem="1dF-je-ELi" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="25" id="GF3-xt-HBf"/>
+                <constraint firstItem="otA-AX-xe8" firstAttribute="top" secondItem="1dF-je-ELi" secondAttribute="bottom" constant="20" id="Kzz-FB-grO"/>
+                <constraint firstItem="1dF-je-ELi" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="30" id="QNm-ac-YOg"/>
+                <constraint firstItem="owP-Ld-0at" firstAttribute="width" secondItem="1dF-je-ELi" secondAttribute="width" id="QQ2-Tj-hlE"/>
+                <constraint firstItem="owP-Ld-0at" firstAttribute="top" secondItem="otA-AX-xe8" secondAttribute="bottom" constant="30" id="WNA-mN-gsq"/>
+                <constraint firstAttribute="trailing" secondItem="1dF-je-ELi" secondAttribute="trailing" constant="25" id="Wlz-wM-TT2"/>
+                <constraint firstAttribute="centerX" secondItem="1dF-je-ELi" secondAttribute="centerX" id="g9s-3F-6Ja"/>
+                <constraint firstAttribute="centerX" secondItem="owP-Ld-0at" secondAttribute="centerX" id="knu-6A-vcB"/>
+                <constraint firstItem="owP-Ld-0at" firstAttribute="width" secondItem="otA-AX-xe8" secondAttribute="width" id="oqz-am-jR9"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <point key="canvasLocation" x="474" y="407"/>
+        </view>
+    </objects>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
